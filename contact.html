@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Elegance</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container">
+        <nav class="nav">
+            <a href="index.html" class="logo">Elegance</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="btn btn-primary active">Book Now</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobile-toggle">☰</button>
+        </nav>
+    </div>
+</header>
+
+<!-- Page Header -->
+<section class="hero" style="min-height: 50vh; padding-top: 120px;">
+    <div class="container">
+        <div class="hero-content fade-in">
+            <h1>Book Your Appointment</h1>
+            <p>Get in touch with us to schedule your beauty transformation</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact & Booking Section -->
+<section class="section">
+    <div class="container">
+        <div class="grid grid-2" style="gap: var(--spacing-3xl); align-items: start;">
+            <!-- Booking Form -->
+            <div>
+                <h2 class="mb-3">Schedule Your Visit</h2>
+                <p class="mb-4">Fill out the form below and we'll confirm your appointment within 24 hours.</p>
+
+                <form id="booking-form" class="card">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name *</label>
+                        <input type="text" id="name" name="name" class="form-input" required
+                            placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" required
+                                placeholder="your@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" required
+                                placeholder="+1 (555) 000-0000">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date" class="form-label">Preferred Date *</label>
+                            <input type="date" id="date" name="date" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="time" class="form-label">Preferred Time *</label>
+                            <select id="time" name="time" class="form-select" required>
+                                <option value="">Select time</option>
+                                <option value="09:00">9:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                                <option value="17:00">5:00 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service" class="form-label">Service Required *</label>
+                        <select id="service" name="service" class="form-select" required>
+                            <option value="">Select a service</option>
+                            <optgroup label="Hair Services">
+                                <option value="haircut">Haircut & Styling</option>
+                                <option value="coloring">Hair Coloring</option>
+                                <option value="treatment">Hair Treatment</option>
+                                <option value="extensions">Hair Extensions</option>
+                            </optgroup>
+                            <optgroup label="Makeup">
+                                <option value="party-makeup">Party Makeup</option>
+                                <option value="bridal-makeup">Bridal Makeup</option>
+                                <option value="airbrush">Airbrush Makeup</option>
+                                <option value="natural-makeup">Natural Makeup</option>
+                            </optgroup>
+                            <optgroup label="Facial Treatments">
+                                <option value="classic-facial">Classic Facial</option>
+                                <option value="anti-aging">Anti-Aging Facial</option>
+                                <option value="hydrating">Hydrating Facial</option>
+                                <option value="gold-facial">Gold Facial</option>
+                            </optgroup>
+                            <optgroup label="Nail Services">
+                                <option value="manicure">Manicure</option>
+                                <option value="gel-manicure">Gel Manicure</option>
+                                <option value="nail-art">Nail Art</option>
+                                <option value="pedicure">Pedicure</option>
+                            </optgroup>
+                            <optgroup label="Spa & Wellness">
+                                <option value="massage">Swedish Massage</option>
+                                <option value="aromatherapy">Aromatherapy</option>
+                                <option value="body-scrub">Body Scrub</option>
+                                <option value="hot-stone">Hot Stone Therapy</option>
+                            </optgroup>
+                            <optgroup label="Bridal Packages">
+                                <option value="basic-bridal">Basic Bridal Package</option>
+                                <option value="deluxe-bridal">Deluxe Bridal Package</option>
+                                <option value="premium-bridal">Premium Bridal Package</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Additional Notes</label>
+                        <textarea id="message" name="message" class="form-textarea"
+                            placeholder="Any specific requirements or preferences..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Book
+                        Appointment</button>
+                </form>
+
+                <div id="form-message"
+                    style="margin-top: var(--spacing-md); padding: var(--spacing-md); border-radius: var(--radius-md); display: none;">
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+                <h2 class="mb-3">Get In Touch</h2>
+                <p class="mb-4">We're here to answer your questions and help you look your best.</p>
+
+                <div class="card mb-3">
+                    <h3 style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                        <span>📍</span> Visit Us
+                    </h3>
+                    <p class="card-text">
+                        123 Beauty Lane<br>
+                        Fashion District<br>
+                        New York, NY 10001
+                    </p>
+                </div>
+
+                <div class="card mb-3">
+                    <h3 style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                        <span>📞</span> Call Us
+                    </h3>
+                    <p class="card-text">
+                        <a href="tel:+15551234567" style="color: var(--accent-rose-gold);">+1 (555) 123-4567</a><br>
+                        <a href="tel:+15559876543" style="color: var(--accent-rose-gold);">+1 (555) 987-6543</a>
+                    </p>
+                </div>
+
+                <div class="card mb-3">
+                    <h3 style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                        <span>✉️</span> Email Us
+                    </h3>
+                    <p class="card-text">
+                        <a href="mailto:hello@elegancebeauty.com"
+                            style="color: var(--accent-rose-gold);">hello@elegancebeauty.com</a><br>
+                        <a href="mailto:booking@elegancebeauty.com"
+                            style="color: var(--accent-rose-gold);">booking@elegancebeauty.com</a>
+                    </p>
+                </div>
+
+                <div class="card mb-4">
+                    <h3 style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                        <span>🕒</span> Opening Hours
+                    </h3>
+                    <p class="card-text">
+                        <strong>Monday - Saturday:</strong> 9:00 AM - 8:00 PM<br>
+                        <strong>Sunday:</strong> 10:00 AM - 6:00 PM<br>
+                        <em style="color: var(--medium-gray); font-size: 0.875rem;">Closed on major holidays</em>
+                    </p>
+                </div>
+
+                <!-- Map Placeholder -->
+                <div class="card" style="padding: 0; overflow: hidden;">
+                    <div
+                        style="width: 100%; height: 300px; background: var(--gradient-rose); display: flex; align-items: center; justify-content: center; color: var(--white);">
+                        <div style="text-align: center;">
+                            <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">📍</div>
+                            <h3 style="color: var(--white); margin-bottom: var(--spacing-xs);">Find Us Here</h3>
+                            <p style="margin: 0;">123 Beauty Lane, Fashion District</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media -->
+                <div class="card mt-3">
+                    <h3 class="mb-3">Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="Pinterest">📌</a>
+                        <a href="#" class="social-link" aria-label="YouTube">📹</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="section" style="background: var(--light-gray);">
+    <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+
+        <div class="grid grid-2">
+            <div class="card">
+                <h3>Do I need to book in advance?</h3>
+                <p class="card-text">Yes, we recommend booking at least 2-3 days in advance, especially for weekends
+                    and bridal services. Walk-ins are welcome subject to availability.</p>
+            </div>
+
+            <div class="card">
+                <h3>What is your cancellation policy?</h3>
+                <p class="card-text">Please notify us at least 24 hours in advance if you need to cancel or
+                    reschedule. Late cancellations may incur a fee.</p>
+            </div>
+
+            <div class="card">
+                <h3>Do you offer group bookings?</h3>
+                <p class="card-text">Absolutely! We offer special packages for bridal parties, birthdays, and group
+                    events. Contact us for customized quotes.</p>
+            </div>
+
+            <div class="card">
+                <h3>What payment methods do you accept?</h3>
+                <p class="card-text">We accept cash, all major credit cards, debit cards, and digital payment apps.
+                    Payment is due at the time of service.</p>
+            </div>
+
+            <div class="card">
+                <h3>Are your products cruelty-free?</h3>
+                <p class="card-text">Yes! We prioritize using cruelty-free and vegan products whenever possible. We
+                    can accommodate specific product preferences.</p>
+            </div>
+
+            <div class="card">
+                <h3>Do you offer trial sessions for bridal makeup?</h3>
+                <p class="card-text">Yes, all our bridal packages include at least one trial session. We recommend
+                    scheduling it 1-2 months before your wedding.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Elegance Beauty Parlour</h3>
+                <p>Where beauty meets expertise. Transforming lives through premium beauty services since 2015.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                    <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                    <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                    <a href="#" class="social-link" aria-label="Pinterest">📌</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <div class="footer-links">
+                    <a href="services.html#hair">Hair Styling</a>
+                    <a href="services.html#makeup">Makeup</a>
+                    <a href="services.html#facial">Facial Treatments</a>
+                    <a href="services.html#nails">Nail Art</a>
+                    <a href="services.html#spa">Spa & Wellness</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <div class="footer-links">
+                    <p>📍 123 Beauty Lane, Fashion District</p>
+                    <p>📞 +1 (555) 123-4567</p>
+                    <p>✉️ hello@elegancebeauty.com</p>
+                    <p>🕒 Mon-Sat: 9AM - 8PM<br>Sunday: 10AM - 6PM</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Elegance Beauty Parlour. All rights reserved. Designed with ✨ and 💖</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Elegance</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container">
+        <nav class="nav">
+            <a href="index.html" class="logo">Elegance</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="btn btn-primary">Book Now</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobile-toggle">☰</button>
+        </nav>
+    </div>
+</header>
+
+<!-- Page Header -->
+<section class="hero" style="min-height: 50vh; padding-top: 120px;">
+    <div class="container">
+        <div class="hero-content fade-in">
+            <h1>Our Gallery</h1>
+            <p>See the stunning transformations and beautiful results we create every day</p>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Filter (Optional) -->
+<section class="section">
+    <div class="container">
+        <div class="flex-center gap-2 mb-5" style="flex-wrap: wrap;">
+            <button class="btn btn-outline filter-btn active" data-filter="all">All</button>
+            <button class="btn btn-outline filter-btn" data-filter="hair">Hair</button>
+            <button class="btn btn-outline filter-btn" data-filter="makeup">Makeup</button>
+            <button class="btn btn-outline filter-btn" data-filter="bridal">Bridal</button>
+            <button class="btn btn-outline filter-btn" data-filter="nails">Nails</button>
+            <button class="btn btn-outline filter-btn" data-filter="spa">Spa</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+            <!-- Hair Styling Images -->
+            <div class="gallery-item" data-category="hair">
+                <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=600&fit=crop"
+                    alt="Hair Styling 1">
+                <div class="gallery-overlay">
+                    <span class="gallery-overlay-text">Hair Styling</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="hair">
+                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&h=600&fit=crop"
+                    alt="Hair Coloring">
+                <div class="gallery-overlay">
+                    <span class="gallery-overlay-text">Hair Coloring</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="hair">
+                <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=600&h=600&fit=crop"
+                    alt="Hair Treatment">
+                <div class="gallery-overlay">
+                    <span class="gallery-overlay-text">Hair Treatment</span>
+                </div>
+            </div>
+
+            <!-- Makeup Images -->
+            <div class="gallery-item" data-category="makeup">
+                <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&h=600&fit=crop"
+                    alt="Professional Makeup">
+                <div class="gallery-overlay">
+                    <span class="gallery-overlay-text">Party Makeup</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="makeup">
+                <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&h=600&fit=crop"
+                    alt="Eye Makeup">
+                <div class="gallery-overlay">
+                    <span class="gallery-overlay-text">Eye Makeup</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="makeup">
+                <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=600&h=600&fit=crop"
+                    alt="Glam Makeup">
+                <div class="gallery-overlay">
+                    <span class="gallery-overlay-text">Glam Makeup</span>
+                </div>
+            </div>
+
+            <!-- Bridal Images -->
+            <div class="gallery-item" data-category="bridal">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=600&fit=crop"
+                    alt="Bridal Makeup">
+                <div class="gallery-overlay">
+                    <span class="gallery-overlay-text">Bridal Makeup</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="bridal">
+                <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&h=600&fit=crop"
+                    alt="Bridal Hair">
+                <div class="gallery-overlay">
+                    <span class="gallery-overlay-text">Bridal Hair & Makeup</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="bridal">
+                <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600&h=600&fit=crop"
+                    alt="Wedding Makeup">
+                <div class="gallery-overlay">
+                    <span class="gallery-overlay-text">Wedding Makeover</span>
+                </div>
+            </div>
+
+            <!-- Nail Art Images -->
+            <div class="gallery-item" data-category="nails">
+                <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=600&fit=crop"
+                    alt="Nail Art">
+                <div class="gallery-overlay">
+                    <span class="gallery-overlay-text">Nail Art Design</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nails">
+                <img src="https://source.unsplash.com/UYPypTuP90w/600x600" alt="Gel Manicure">
+                <div class="gallery-overlay">
+                    <span class="gallery-overlay-text">Gel Manicure</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nails">
+                <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=600&h=600&fit=crop"
+                    alt="French Manicure">
+                <div class="gallery-overlay">
+                    <span class="gallery-overlay-text">French Manicure</span>
+                </div>
+            </div>
+
+            <!-- Spa Images -->
+            <div class="gallery-item" data-category="spa">
+                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&h=600&fit=crop"
+                    alt="Spa Treatment">
+                <div class="gallery-overlay">
+                    <span class="gallery-overlay-text">Facial Treatment</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="spa">
+                <img src="https://source.unsplash.com/_TyrA1RUaiI/600x600" alt="Massage Therapy">
+                <div class="gallery-overlay">
+                    <span class="gallery-overlay-text">Massage Therapy</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="spa">
+                <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&h=600&fit=crop"
+                    alt="Relaxing Spa">
+                <div class="gallery-overlay">
+                    <span class="gallery-overlay-text">Spa & Wellness</span>
+                </div>
+            </div>
+
+            <!-- Mixed/Additional Images -->
+            <div class="gallery-item" data-category="hair">
+                <img src="https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3?w=600&h=600&fit=crop"
+                    alt="Hair Updo">
+                <div class="gallery-overlay">
+                    <span class="gallery-overlay-text">Special Occasion Hair</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="makeup">
+                <img src="https://images.unsplash.com/photo-1526045478516-99145907023c?w=600&h=600&fit=crop"
+                    alt="Natural Makeup">
+                <div class="gallery-overlay">
+                    <span class="gallery-overlay-text">Natural Makeup</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="bridal">
+                <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&h=600&fit=crop"
+                    alt="Bridal Look">
+                <div class="gallery-overlay">
+                    <span class="gallery-overlay-text">Complete Bridal Look</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section" style="background: var(--gradient-rose); color: var(--white); text-align: center;">
+    <div class="container">
+        <h2 style="color: var(--white);">Ready to Look This Amazing?</h2>
+        <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.9);">Book your appointment and experience
+            the Elegance transformation</p>
+        <a href="contact.html" class="btn btn-primary btn-lg">Book Appointment</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Elegance Beauty Parlour</h3>
+                <p>Where beauty meets expertise. Transforming lives through premium beauty services since 2015.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                    <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                    <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                    <a href="#" class="social-link" aria-label="Pinterest">📌</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <div class="footer-links">
+                    <a href="services.html#hair">Hair Styling</a>
+                    <a href="services.html#makeup">Makeup</a>
+                    <a href="services.html#facial">Facial Treatments</a>
+                    <a href="services.html#nails">Nail Art</a>
+                    <a href="services.html#spa">Spa & Wellness</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <div class="footer-links">
+                    <p>📍 123 Beauty Lane, Fashion District</p>
+                    <p>📞 +1 (555) 123-4567</p>
+                    <p>✉️ hello@elegancebeauty.com</p>
+                    <p>🕒 Mon-Sat: 9AM - 8PM<br>Sunday: 10AM - 6PM</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Elegance Beauty Parlour. All rights reserved. Designed with ✨ and 💖</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Modal for Image Viewing -->
+<div class="modal" id="gallery-modal">
+    <button class="modal-close" id="modal-close">&times;</button>
+    <div class="modal-content">
+        <img id="modal-img" src="" alt="Gallery Image">
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
