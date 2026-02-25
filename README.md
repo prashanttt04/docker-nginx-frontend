@@ -1,19 +1,25 @@
-# Elegance Beauty Parlour
+# 💄 Parlour Website – Dockerized Static Web Application
 
-A beautiful, modern website for a women's beauty parlour featuring elegant design and smooth user experience.
+## 📌 Project Overview
 
-## Features
-- 💖 Premium pink/rose gold theme
-- 📱 Fully responsive design
-- 🎨 5 complete pages (Home, Services, Gallery, About, Contact)
-- ✨ Smooth animations and interactions
-- 📝 Working booking form with validation
-- 🖼️ Interactive gallery with filters
+This project is a static Parlour Website built using:
 
-## Technologies Used
-- HTML5
-- CSS3 (Vanilla)
-- JavaScript (ES6+)
+- HTML
+- CSS
+- JavaScript
 
-## Live Demo
-Visit: [Your GitHub Pages URL will appear here after deployment]
+The main objective of this project is to demonstrate how Docker can be used to containerize a static web application so that it runs consistently on any system without manual server setup.
+
+The website is served using Nginx inside a Docker container.
+
+---
+
+## 🐳 Dockerfile Used
+
+```dockerfile
+FROM nginx
+LABEL maintainer="Prashant Rao Jagtap"
+WORKDIR /usr/share/nginx/html
+COPY . .
+EXPOSE 80
+CMD ["nginx" , "-g", "daemon off;"]
